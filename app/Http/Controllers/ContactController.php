@@ -1278,4 +1278,23 @@ class ContactController extends Controller
             return $e->getMessage();
         }
     }
+
+    public function getTransactionsByContactOrInvoice(Request $request){
+        try {
+            $search = $request['query'];
+            $transactions = DB::table('transactions as t')
+            ->join('contacts as c','c.id','=','t.contact_id')
+            ->where(function ($query) use ( $search){
+                $query->where('c.mobile','like','%'.$search.'%')
+                ->orWhere('t.invoice_no','like','%'.$search.'%');
+            })
+            ->select(['t.*','c.name','c.mobile'])
+            ->get();
+            return response()->json($transactions, 200);
+        } catch (\Exception $e) {
+            return response()->json($e->getMessage(), 200);
+        }
+    }
+
 }
+

@@ -42,6 +42,38 @@
                   <strong><i class="fa fa-plus"></i> POS</strong></a>
               </div>
 				</div>
+				<div style="display: flex">
+					<input type="text" name="" id="searchReportsInput" placeholder="Phone/Invoice" class="form-control"
+						width="70%">
+					<button type="button" id="searchReports" class="btn btn-info" data-toggle="modal" data-target="#oldOrders">
+						Search
+					</button>
+				</div>
+				<div class="modal fade" id="oldOrders" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+					aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Customer Orders</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<table class="table">
+									<th>Name</th>
+									<th>Phone</th>
+									<th>Invoice ID</th>
+									<th>Payment Status</th>
+									<th>Amount</th>
+									<th>Date</th>
+									<th>View</th>
+									<tbody id="oldOrdersTable"></tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
 				<input type="hidden" id="item_addition_method" value="{{$business_details->item_addition_method}}">
 				{!! Form::open(['url' => action('SellPosController@update', [$transaction->id]), 'method' => 'post', 'id' => 'edit_pos_sell_form' ]) !!}
 

@@ -24,3 +24,5 @@ Route::post('/renewCustomerSubscriptionPlan', 'ContactController@renewCustomerSu
 Route::get('/get/customers','OutsideCustomerController@getCustomers');
 Route::get('/get/drivers','DriverController@getDrivers');
 Route::get('/get/areas/{pid}','OutsideCustomerController@getAreas');
+Route::get('/get/transactions/{query}','ContactController@getTransactionsByContactOrInvoice');
+

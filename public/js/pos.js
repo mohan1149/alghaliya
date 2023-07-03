@@ -1,4 +1,27 @@
 $(document).ready(function() {
+
+    //pos screen get old records by mobile or invoice
+    $("#searchReports").on('click',()=>{
+        let search = $("#searchReportsInput").val();
+        $.getJSON("/api/get/transactions/" + search, (response) => {
+            $('#oldOrdersTable').empty();
+            let rows = "";
+            response.forEach((item)=>{
+                console.log(item);
+                rows += "<tr>";
+                rows += "<td>"+item.name+"</td>";
+                rows += "<td>"+item.mobile+"</td>";
+                rows += "<td>"+item.invoice_no+"</td>";
+                rows += "<td>"+item.payment_status+"</td>";
+                rows += "<td>"+item.final_total+"</td>";
+                rows += "<td>"+item.updated_at+"</td>";
+                rows += "<td><a href='/pos/"+item.id+"/edit' target='_blank'>View</a></td>";
+                
+            })
+            $('#oldOrdersTable').append(rows);
+        });
+    });
+
     // mohan changes for pos
     let subscription_name = "";
     let quota_used = 0;
