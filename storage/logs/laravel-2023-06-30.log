@@ -1,0 +1,4 @@
+[2023-06-30 18:58:02] live.EMERGENCY: File:/home/660679.cloudwaysapps.com/vkfncqzxsh/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.phpLine:967Message:Unauthorized action.  
+[2023-06-30 18:58:19] live.EMERGENCY: File:/home/660679.cloudwaysapps.com/vkfncqzxsh/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.phpLine:967Message:Unauthorized action.  
+[2023-06-30 19:01:30] live.EMERGENCY: File:/home/660679.cloudwaysapps.com/vkfncqzxsh/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.phpLine:967Message:Unauthorized action.  
+[2023-06-30 22:51:45] live.EMERGENCY: File:/home/660679.cloudwaysapps.com/vkfncqzxsh/public_html/app/Utils/CashRegisterUtil.phpLine:109Message:Undefined index:   

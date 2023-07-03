@@ -1,0 +1,7 @@
+[2023-06-16 15:23:08] live.EMERGENCY: File:/home/660679.cloudwaysapps.com/vkfncqzxsh/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.phpLine:967Message:Unauthorized action.  
+[2023-06-16 15:25:36] live.EMERGENCY: File:/home/660679.cloudwaysapps.com/vkfncqzxsh/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.phpLine:967Message:Unauthorized action.  
+[2023-06-16 15:26:07] live.EMERGENCY: File:/home/660679.cloudwaysapps.com/vkfncqzxsh/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.phpLine:967Message:Unauthorized action.  
+[2023-06-16 15:26:39] live.EMERGENCY: File:/home/660679.cloudwaysapps.com/vkfncqzxsh/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.phpLine:967Message:Unauthorized action.  
+[2023-06-16 15:26:59] live.EMERGENCY: File:/home/660679.cloudwaysapps.com/vkfncqzxsh/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.phpLine:967Message:Unauthorized action.  
+[2023-06-16 16:08:09] live.EMERGENCY: File:/home/660679.cloudwaysapps.com/vkfncqzxsh/public_html/app/Utils/ProductUtil.phpLine:512Message:Trying to get property 'product_type' of non-object  
+[2023-06-16 16:08:38] live.EMERGENCY: File:/home/660679.cloudwaysapps.com/vkfncqzxsh/public_html/app/Utils/ProductUtil.phpLine:512Message:Trying to get property 'product_type' of non-object  
