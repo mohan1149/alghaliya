@@ -57,6 +57,9 @@
                             Search
                         </button>
                     </div>
+                    <div class="text-center bg-red bg-danger">
+                        <p style="padding: 4px;margin-top:5px"><strong>Today Items Count: {{$todayItemsCount}}. </strong>(Max Allowed - 700)</p>
+                    </div>
                     <div class="modal fade" id="oldOrders" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog" role="document">

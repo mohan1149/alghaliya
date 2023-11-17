@@ -225,6 +225,9 @@ class SellPosController extends Controller
 
         $default_datetime = $this->businessUtil->format_date('now', true);
         $customer_areas = DB::table('KW_AREA')->get();
+        //get todays total items count;
+        $todayItemsCount = DB::table('transaction_sell_lines')->whereDate('created_at',date('Y-m-d'))->count('id');
+
         return view('sale_pos.create')
             ->with(compact(
                 'business_details',
@@ -252,6 +255,7 @@ class SellPosController extends Controller
                 'customers',
                 'correspondents',
                 'products',
+                'todayItemsCount'
             ));
     }
 
