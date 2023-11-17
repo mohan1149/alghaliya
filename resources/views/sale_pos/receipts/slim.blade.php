@@ -54,6 +54,9 @@
             <strong>{{ $receipt_details->customer_label }}</strong>
             <strong style="font-size:18px">{{ $receipt_details->customer_name }}</strong>
             <br>
+            <strong>Subscription ID: </strong>
+            <strong style="font-size:18px">{{ $receipt_details->client_id }}</strong>
+            <br>
             <strong>Phone</strong>
             <strong style="font-size:18px">{{ $receipt_details->contact }}</strong>
             <br>
